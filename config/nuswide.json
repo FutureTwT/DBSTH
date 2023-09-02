@@ -1,0 +1,39 @@
+{
+  "classes": 21,
+
+  "image_global_dim": 768,
+  "text_global_dim": 1000,
+  "image_local_dim": 768,
+  "text_local_dim": 300,
+
+  "image_seq_len": 196,
+  "text_seq_len": 1000,
+
+  "L2H_hidden_dim": [21, 1024, 1024],
+  "img_hidden_dim": [768, 2048, 128],
+  "txt_hidden_dim": [300, 1024, 128],
+
+  "nhead": 1,
+  "num_layer": 2,
+  "trans_act": "gelu",
+  "lr": 0.001,
+  
+  "epochs_pre": 100,
+  "epochs": 50,
+  "dropout":  0.5,
+  "batch_size": 512,
+  "eval_batch_size": 1024,
+
+  "save_flag": true,
+  "num_workers": 0,
+
+  "param_recon_pre": 0.001,
+  "param_sign_pre": 100,
+  "param_bal_pre": 0.01,
+  "param_static_pre": 1,
+
+  "add_global": false,
+  "mask_concept": false,
+  "mask_flag": "replace",
+  "mask_input": false
+}
